@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Team>
+	<Anggota>
+		<Nomer>1</Nomer>
+		<Keahlian>Modeling</Keahlian>
+		<Nama>Agung Darmayuda</Nama>
+		<Usia>20 Tahun</Usia>
+	</Anggota>
+	<Anggota>
+		<Nomer>2</Nomer>
+		<Keahlian>Design dan Concept</Keahlian>
+		<Nama>Budiarta</Nama>
+		<Usia>22 Tahun</Usia>
+	</Anggota>
+	<Anggota>
+		<Nomer>3</Nomer>
+		<Keahlian>Texturing</Keahlian>
+		<Nama>Ayu Dian</Nama>
+		<Usia>20 Tahun</Usia>
+	</Anggota>
+	<Anggota>
+		<Nomer>4</Nomer>
+		<Keahlian>Post Production dan Retouching</Keahlian>
+		<Nama>Derbiana</Nama>
+		<Usia>21 Tahun</Usia>
+	</Anggota>
+</Team>

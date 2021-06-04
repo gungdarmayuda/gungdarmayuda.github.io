@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Darmay Creation</title>
+			<link rel="icon" type="image" href="Icon.ico"/>
+			<meta name="viewport" content="width=device-width">
+	<style>
+		*{margin:0;}
+		#menudasar
+		{
+			width:100%;
+		}
+		#menucopyright
+		{
+			width:100%;
+			height:90px;
+			background-color:#232323;
+			box-shadow: 0px 5px 9px #111111 inset;
+		}
+		#menu
+		{
+			width:100%;
+			height:90px;
+			top:0px;
+			left:0px;
+			right:0px;
+			background-color:#232323;
+			position:absolute;
+			display: block;
+ 			box-shadow: 0px 0px 13px #111111;
+ 			position: fixed;
+ 			z-index: 1;
+		}
+		#menu ul
+		{
+			list-style-type:none;
+			padding:0px;
+			margin-top:20px;
+			margin-left:550px;
+		}
+		#menu ul li
+		{
+			float:left;
+		}
+		#menu ul li a
+		{
+			font-size:11px;
+			display:block;
+			width:120px;
+			padding:15px;
+			text-align:center;
+			text-decoration:none;
+			font-size:12px;
+			font-family: 'Open Sans', arial, sans-serif;
+			line-height: 20px;
+			color:white;
+		}
+		#menu ul li li a 
+		{
+			text-align:left;
+		}
+		#menu ul li a:hover
+		{
+			-webkit-transition:all 0.3s linear;
+			-moz-transition:all 0.3s linear;
+			color:#f8e231;
+		}
+		#menu ul ul 
+		{
+			width:160px;
+			background-color:#2940d3;
+			position:absolute;
+			margin-top:0px;
+			margin-left:0px;
+			display:none;
+		}
+		#menu ul ul li a 
+		{
+			width:130px;
+		}
+		#menu ul li:hover ul
+		{
+			display:block;
+		}
+		#menu ul ul li a:hover
+		{
+			background-color:#39a9cb;
+			color:white;
+		}
+		#logo
+		{
+			width:17%;
+			position:absolute;
+			top:25px;
+			left:75px;
+			position: fixed;
+			z-index: 1;
+		}
+		#gambar
+		{
+			width:100%;
+			height:720px;
+			background-color:#232323;
+		}
+		#konten
+		{
+			width:100%;
+			height:45px;
+			position:absolute;
+			top:55%;
+		}
+		#isi
+		{
+			width:100%;
+			height:550px;
+			background-color:#white;
+		}
+		p.copyright
+		{
+			color:white;
+			font-size:12px;
+			font-family: 'Open Sans', arial, sans-serif;
+			line-height: 20px;
+			text-align:center;
+		}
+		#icon
+		{
+			width:9%;
+			height:30px;
+			position:absolute;
+			top:37px;
+			right:75px;
+			padding:0px;
+			text-align:center;
+			position: fixed;
+			z-index: 1;
+		}
+		p.konten
+		{
+			color:white;
+			font-size:40px;
+			font-family: 'Open Sans', arial, sans-serif;
+			text-shadow: 2px 2px 8px #111111;
+			font-weight: 700;
+			line-height: 20px;
+			letter-spacing: 2px;
+			text-align:center;
+		}
+		p.konten2
+		{
+			color:white;
+			font-size:18px;
+			font-family: 'Open Sans', arial, sans-serif;
+			font-weight: 5;
+			text-shadow: 2px 2px 10px #111111;
+			line-height: 20px;
+			letter-spacing: 5px; 
+			padding:18px;
+			text-align:center;
+		}
+		p.judul
+		{
+			color:#111111;
+			font-size:40px;
+			font-family: 'Open Sans', arial, sans-serif;
+			font-weight: 700;
+			line-height: 20px;
+			letter-spacing: 2px;
+			text-align:center;
+		}
+		p.isi2
+		{
+			color:#111111;
+			font-size:16px;
+			font-family: 'Open Sans', arial, sans-serif;
+			font-weight: 5;
+			line-height: 30px;
+			letter-spacing: 2px; 
+			padding:18px;
+			text-align:center;
+		}
+		i.arrow
+		{
+			color:yellow;
+			font-size:12px;
+			font-family: 'Open Sans', arial, sans-serif;
+			font-style: normal;  
+			font-weight: bold;
+			line-height: 20px;
+			text-align:center;
+		}
+		.barwadah {
+			  width: 100%;
+			  height: 5px;
+			  background: #232323;
+			  position: fixed;
+			  z-index: 1;
+			}
+
+		.barbewarna {
+		  	height: 5px;
+		  	background: #FFFF00;
+		  	width: 0%;
+		  	position: fixed;
+			z-index: 1;
+		}
+		#tabel
+		{
+		border : 1px solid black;
+		border-collapse: collapse;
+		font-family: 'Open Sans', arial, sans-serif;
+		padding: 5px;
+		}
+	</style>
+		<script> 
+		window.onscroll = function() {fungsi()};
+
+		function fungsi() {
+		  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		  var scrolled = (winScroll / height) * 100;
+		  document.getElementById("untuk scroll").style.width = scrolled + "%";
+		}
+
+		function panggilxml() {
+		  var xmlhttp = new XMLHttpRequest();
+		  xmlhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      myFunction(this);
+		    }
+		  };
+		  xmlhttp.open("GET", "data.xml", true);
+		  xmlhttp.send();
+		}
+		function myFunction(xml) {
+		  var i;
+		  var xmlDoc = xml.responseXML;
+		  var table="<tr><th>Nomer</th><th>Keahlian</th><th>Nama</th><th>Usia</th></tr>";
+		  var x = xmlDoc.getElementsByTagName("Anggota");
+		  for (i = 0; i <x.length; i++) { 
+		    table += "<tr><td>" +
+		    x[i].getElementsByTagName("Nomer")[0].childNodes[0].nodeValue +
+		    "</td><td>" +
+		    x[i].getElementsByTagName("Keahlian")[0].childNodes[0].nodeValue +
+		    "</td><td>" +
+		    x[i].getElementsByTagName("Nama")[0].childNodes[0].nodeValue +
+		    "</td><td>" +
+		    x[i].getElementsByTagName("Usia")[0].childNodes[0].nodeValue +
+		    "</td></tr>";
+		  }
+		  document.getElementById("tabel").innerHTML = table;
+		}
+		</script>
+</head>
+<body>
+									<div id="menudasar">
+										<div id="menu">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li>
+													<a><i class="arrow">v</i>&nbsp;&nbsp;Profil Perusahaan</a>
+													<ul>
+														<li>
+															<a href="Sejarahperusahaan.html">Sejarah Perusahaan</a>
+															<a href="Visidanmisi.html">Visi dan Misi</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a><i class="arrow">v</i>&nbsp;&nbsp;Project Kami</a>
+													<ul>
+														<li>
+															<a href="Jasa.html">Jasa</a>
+															<a href="Keunggulan.html">Keunggulan</a>
+														</li>
+													</ul>
+												</li>						
+												<li><a href="Kontakkami.html">Kontak Kami</a></li>
+											</ul>
+										</div>
+								</div>
+								<div id="logo">
+									<img src="logo.png"width="100%"height="100%"/>
+								</div>
+								<div class="barwadah">
+    							<div class="barbewarna" id="untuk scroll"></div>
+  								</div> 
+								<div id="gambar">
+									<img src="BG2.jpg"width="100%"height="100%"/>
+								</div>
+								<div id="konten">
+									<table border="0px"width="100%"height="100%">
+										<tr height="10px">
+											<td>
+												<p class="konten">"Everything you can imagine is real."</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p class="konten2"><i>- Pablo Picasso -</i></p>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div id="icon">
+									<a href="https://web.facebook.com/"target="_blank"><img src="fb.png" width="19%"/></a>
+									<a href="https://www.instagram.com/"target="_blank"><img src="instagram.png" width="19%"/></a>
+									<a href="https://twitter.com/"target="_blank"><img src="tw.png" width="19%"/></a>
+								</div>
+								<div id="isi">
+									<table border="0px"width="75%"height="50%"style="margin: 0 auto;margin-top: 130px;">
+										<tr>
+											<td>
+												<p class="judul">Sejarah Kami</p><br><br><br>
+												<hr size="3" width="10%" color="#111111"style="margin: 0 auto;">  
+												<br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p class="isi2">Darmay Creation lahir pada tahun 2017 di Denpasar, Bali, didirikan oleh seorang yang bernama Agung Darmayuda. Pada mulanya, Darmay creation berjalan secara individu dengan dukungan aplikasi Blender. Seiring berjalannya waktu, Darmay Creation terus berkembang dan berinovasi hingga saat ini. Darmay Creation adalah sebuah perusahaan digital yang bergerak di bidang industri kreatif, jasa pembuatan objek 3 Dimensi. </p>
+
+												<button type="button" onclick="panggilxml()">Tampilkan Anggota Team</button>
+												<br><br>
+												<table id="tabel"></table>
+											</td>
+										</tr>
+									</table>
+								</div>
+	<div id="menucopyright">
+		<table border="0px"width="100%"height="100%">
+			<tr height="10px">
+				<td>
+					<p class="copyright">copyright &copy; 2021 Darmay Creation. All rights reserved. Design & Maintenance by Darmay Creation</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>
