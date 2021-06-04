@@ -237,7 +237,7 @@
 		function myFunction(xml) {
 		  var i;
 		  var xmlDoc = xml.responseXML;
-		  var table="<tr><th>Nomer</th><th>Keahlian</th><th>Nama</th><th>Usia</th></tr>";
+		  var table="<tr padding="5px"><th>Nomer</th><th>Keahlian</th><th>Nama</th><th>Usia</th></tr>";
 		  var x = xmlDoc.getElementsByTagName("Anggota");
 		  for (i = 0; i <x.length; i++) { 
 		    table += "<tr><td>" +
@@ -324,7 +324,7 @@
 
 												<button type="button" onclick="panggilxml()">Tampilkan Anggota Team</button>
 												<br><br>
-												<table id="tabel"width="100%"></table>
+												<table id="tabel"></table>
 											</td>
 										</tr>
 									</table>
