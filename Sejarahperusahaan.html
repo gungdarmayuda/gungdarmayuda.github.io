@@ -237,7 +237,7 @@
 		function myFunction(xml) {
 		  var i;
 		  var xmlDoc = xml.responseXML;
-		  var table="<tr padding="5px"><th>Nomer</th><th>Keahlian</th><th>Nama</th><th>Usia</th></tr>";
+		  var table="<tr><th>Nomer</th><th>Keahlian</th><th>Nama</th><th>Usia</th></tr>";
 		  var x = xmlDoc.getElementsByTagName("Anggota");
 		  for (i = 0; i <x.length; i++) { 
 		    table += "<tr><td>" +
